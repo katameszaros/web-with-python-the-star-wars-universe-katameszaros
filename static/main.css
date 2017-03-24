@@ -1,0 +1,23 @@
+
+body {
+  padding-top: 50px;
+}
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+

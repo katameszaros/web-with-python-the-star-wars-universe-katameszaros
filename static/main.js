@@ -1,4 +1,3 @@
-
     var request = new XMLHttpRequest();
     request.open('GET', 'http://swapi.co/api/planets/', true);
     request.onload = function () {
@@ -30,30 +29,31 @@
                                 var request_for_people = new XMLHttpRequest();
                                 request_for_people.open('GET', planets[i].residents[j], true);
                                 request_for_people.onload = function () {
-                                if (request_for_people.status >= 200 && request_for_people.status < 400) {
-                                    var people_data = JSON.parse(request_for_people.responseText);
-                                    console.log(people_data);
-                                    $("#peopledata").append(
-                                        '<tr class="individual_data"><td>' + people_data.name + '</td>' +
-                                        '<td>' + people_data.height + '</td>' +
-                                        '<td>' + people_data.mass + '</td>' +
-                                        '<td>' + people_data.skin_color + '</td>'+
-                                        '<td>' + people_data.hair_color + '</td>'+
-                                        '<td>' + people_data.birth_year + '</td>'+
-                                        '<td>' + people_data.gender + '</td></tr>'
-                                    )
+                                    if (this.status >= 200 && this.status < 400) {
+                                        var people_data = JSON.parse(this.responseText);
+                                        console.log(people_data);
+                                        $("#peopledata").append(
+                                            '<tr class="individual_data"><td>' + people_data.name + '</td>' +
+                                            '<td>' + people_data.height + '</td>' +
+                                            '<td>' + people_data.mass + '</td>' +
+                                            '<td>' + people_data.skin_color + '</td>'+
+                                            '<td>' + people_data.hair_color + '</td>'+
+                                            '<td>' + people_data.birth_year + '</td>'+
+                                            '<td>' + people_data.gender + '</td></tr>'
+                                        );
 
-                                }
-                            };
 
+                                    }
+
+                                };
+                                request_for_people.send();
                         };
 
-                        request_for_people.send();
 
 
                         $('.modal-header').append(
                             '<h4 class="modal-title"> Residents of ' + planets[i].name + '</h4>'
-                        )
+                        );
 
                     }
                 }

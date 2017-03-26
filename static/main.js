@@ -100,7 +100,7 @@ function checkResidents(planet, index) {
     if (planet.residents.length === 0) {
         return 'No known residents';
     } else {
-        return '<button id=' + index + ' class = "get_people_data" type="button" data-toggle="modal" data-target="#myModal">' + planet.residents.length + ' residents </button>'
+        return '<button id=' + index + ' class = "btn get_people_data" type="button" data-toggle="modal" data-target="#myModal">' + planet.residents.length + ' residents </button>'
     }
 }
 

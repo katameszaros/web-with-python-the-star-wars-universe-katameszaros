@@ -10,7 +10,7 @@ body {
 
 
 .main {
-  padding: 20px;
+  padding: 10px;
 }
 @media (min-width: 768px) {
   .main {
@@ -21,3 +21,12 @@ body {
   margin-top: 0;
 }
 
+
+:disabled {
+  color: #adadad;
+}
+
+.col-md-10{
+  width: 90%;
+  margin-left: 5em;
+}

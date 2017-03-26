@@ -52,7 +52,7 @@ function bindPlanetTable(planets) {
 function bindLineOfIndividual(people_data) {
     $("#peopledata").append(
         '<tr class="individual_data"><td>' + people_data.name + '</td>' +
-        '<td>' + people_data.height / 100 + ' m</td>' +
+        '<td>' + checkIfNumeric(people_data.height / 100, " m")+ '</td>' +
         '<td>' + checkIfNumeric(people_data.mass, " kg") + '</td>' +
         '<td>' + people_data.skin_color + '</td>' +
         '<td>' + checkIfNone(people_data.hair_color) + '</td>' +

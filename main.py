@@ -10,6 +10,7 @@ app.config.update(dict(
 
 app.config.from_envvar('FLASKR_SETTINGS', silent=True)
 
+
 def get_all_planets():
     response = requests.get('http://swapi.co/api/planets').json()
     all_planets = response['results']
@@ -22,12 +23,8 @@ def show_start_html():
 
 
 def main():
-    #
-    # print(all_planets)
-    # dict= all_planets[0]
-    # name = dict.get('name')
-    # print(name)
     app.run()
+
 
 if __name__ == '__main__':
     main()

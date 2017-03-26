@@ -1,56 +1,55 @@
 
 body {
-  padding-top: 50px;
-  background-image: url("wallpaper.jpg");
-  background-size: cover;
+    padding-top: 50px;
+    background-image: url("wallpaper.jpg");
+    background-size: cover;
 }
 
 .sub-header {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
 }
-
 
 .main {
-  padding: 10px;
+    padding: 10px;
 }
+
 @media (min-width: 768px) {
-  .main {
+    .main {
 
-  }
+    }
 }
+
 .main .page-header {
-  margin-top: 0;
+    margin-top: 0;
 }
-
 
 :disabled {
-  color: #adadad;
+    color: #adadad;
 }
 
-.col-md-10{
-  width: 90%;
-  margin-left: 5em;
+.col-md-10 {
+    width: 90%;
+    margin-left: 5em;
 }
 
-
-tr{
-  color: white;
-  background-color: rgba(0,0,0, 0.54);
+tr {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.54);
 }
 
-td{
-  border-top: 1px solid #232222 !important;
+td {
+    border-top: 1px solid #232222 !important;
 }
 
-.btn{
-  background-color: rgba(148, 107, 107, 0.68);
-  box-shadow: 0px 0px 10px black;
+.btn {
+    background-color: rgba(148, 107, 107, 0.68);
+    box-shadow: 0px 0px 10px black;
 }
 
 #previous, #next {
-  margin-bottom: 5px;
-  color: white;
+    margin-bottom: 5px;
+    color: white;
 }
 
 @font-face {
@@ -58,32 +57,32 @@ td{
     src: url('Starjedi.ttf');
 }
 
-h2{
-  font-size: xx-large;
-  font-family: 'StarWars';
-  text-align: center;
-  text-shadow: 0px 0px 10px #f1ff74;
+h2 {
+    font-size: xx-large;
+    font-family: 'StarWars';
+    text-align: center;
+    text-shadow: 0px 0px 10px #f1ff74;
 }
 
-.modal-content{
-  background-color: rgba(148, 107, 107, 0.68);
+.modal-content {
+    background-color: rgba(148, 107, 107, 0.68);
 }
 
-.modal-title{
-  color: white;
+.modal-title {
+    color: white;
 }
 
-.modal-header{
-  border-bottom: 0px;
-
-}
-
-.table>tbody>tr>th{
-  border-top: 0px;
-  border-bottom: 1px solid white;
+.modal-header {
+    border-bottom: 0px;
 
 }
 
-.sub-header{
-  border-bottom: 0px;
+.table > tbody > tr > th {
+    border-top: 0px;
+    border-bottom: 1px solid white;
+
+}
+
+.sub-header {
+    border-bottom: 0px;
 }

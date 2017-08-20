@@ -121,4 +121,4 @@ function checkIfNumeric(data, addOn) {
 }
 
 
-loadPlanetPageData('http://swapi.co/api/planets/');
+loadPlanetPageData('https://swapi.co/api/planets/');
